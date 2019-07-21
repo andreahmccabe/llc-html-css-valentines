@@ -221,7 +221,7 @@
 
         Left `<` & `>` right angled brackets surround the tag name. Tags usually come in pairs — an opening tag and a *closing tag*. Note the a forward slash in the closing tag:
 
-        ```xml
+        ```html
         <tagname>Content goes between the tags.</tagname>
         ```
 
@@ -243,10 +243,10 @@
         * used for defining the page title
         * displays in the browser's tab, search engine results and bookmarks.
 
-        ```xml
+        ```html
         <title>Page Title</title>
         ```
-        ```xml
+        ```html
         <title>Valentine's Day Love Bomb!</title>
         ```
       </script>
@@ -260,7 +260,7 @@
         * there are 6 heading tags (`<h1>,<h2>,...,<h6>`)
         * follows a hierarchical structure
 
-        ```xml
+        ```html
         <h1>Most Important Heading</h1>
         <h2>Second Most Important Heading</h2>
         ```
@@ -268,7 +268,7 @@
         ##Paragraphs
         * Created with the `<p></p>` tags.
 
-        ```xml
+        ```html
         <p>I'm a paragraph.</p>
         ```
       </script>
@@ -283,7 +283,7 @@
         * used to indicate that the enclosed text is a quotation
         * a source of the quotation may be given using the `<cite>` tag
 
-        ```xml
+        ```html
         <blockquote>
           <p>You know you're in love when you can't fall asleep because reality is finally better
           than your dreams.</p>
@@ -301,13 +301,13 @@
 
         **Link**: requires an `href` *attribute* to specify where to link to.
 
-        ```
+        ```html
         <a href="http://website.com">link</a>
         ```
 
         **Images**: like links, also requires an additional attribute, `src`, for linking to the image file and `alt` to provide alternative text for accessibility.
 
-        ```
+        ```html
         <img src="director/image-file.jpg" alt="alternative text">
         ```
 
@@ -399,7 +399,7 @@
 
         Comments are great for leaving notes, organizing code blocks or for "commenting" out code (hiding it for later). Note they syntax below:
 
-        ```
+        ```css
         p {
           color: #B109AA; /* LLC purple */
         }
@@ -425,7 +425,7 @@
 
         Referenced in the `<head>`, use a `<link>` tag and two **attributes**, `rel` and `href`. The value of the `rel` attribute is the relationship of this CSS file to the HTML file we are inserting it into. The value of the `href` is the location of the style sheet in your folder structure.
 
-        ```
+        ```html
         <head>
           <title>Page Title</title>
           <meta charset="utf-8">
@@ -473,7 +473,7 @@
 
         Copy the `<link>` code snippet and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
 
-        ```
+        ```html
         <head>
           <meta charset="UTF-8">
           <title>Love Bomb!</title>
@@ -485,7 +485,7 @@
         Now you're ready to use the new fonts!
         Use the font-family name listed in the Google Fonts page.
 
-        ```
+        ```css
         font-family: 'Sacramento', cursive;
         font-family: 'Lato', sans-serif;
         ```
@@ -504,7 +504,7 @@
 
         A strength of CSS is styles can be inherited from parent to child elements. Nested HTML elements create a family tree structure.
 
-        ```
+        ```html
         <body><!-- parent of h1 and p -->
           <h1>My Website</h1><!-- child of body, sibling of p -->
           <p>This is a paragraph.</p><!-- child of body, sibling of h1 -->
@@ -514,7 +514,7 @@
 
         CSS properties in the body selector are inherited by the descendant elements. A more specific selector will override the inherited values.
 
-        ```
+        ```css
         body {
           color: #222222;
         }
@@ -568,7 +568,7 @@
 
         Here's what was added:
 
-        ```
+        ```css
         body {
           font-family: 'Lato', sans-serif;
         }
@@ -639,11 +639,11 @@ color: #222222;</textarea>
         #Class Exercise: Unicodes
         Let's add it using a `span` tag. It can be included on it's own or within a paragraph.
 
-        ```xml
+        ```html
         <span>&#9829;</span>
         <span>&hearts;</span>
         ```
-        ```xml
+        ```html
         <p>This goes out to all the volunteers, mentors, instructors and learners across the country. Thanks for making LLC so awesome! Happy Valentine's Day! <span>&hearts;</span></p>
         ```
 
@@ -657,7 +657,7 @@ color: #222222;</textarea>
 
         When **type selectors** are too general (targeting the HTML element), use a `class` **attributes** to attach extra identifying information.  Use a leading period in the CSS to select it.
 
-        ```
+        ```css
         span { /* targets ALL span elements */
           color: blue;
         }
@@ -666,7 +666,7 @@ color: #222222;</textarea>
         }
         ```
 
-        ```xml
+        ```html
         <span>&hearts;</span>
         <p>This goes out to all the volunteers, mentors, instructors and learners across the country. Thanks for making LLC so awesome! Happy Valentine's Day! <span class="heart-pulse">&hearts;</span></p>
         ```
@@ -679,13 +679,13 @@ color: #222222;</textarea>
 
         Add the class of `.heart-pulse` to the heart icon.
 
-        ```xml
+        ```html
         <p>This goes out to all the volunteers, mentors, instructors and learners across the country. Thanks for making LLC so awesome! Happy Valentine's Day! <span class="heart-pulse">&hearts;</span></p>
         ```
 
         In the CSS, try changing the color.
 
-        ```
+        ```css
         .heart-pulse {
           color: #B109AA; /* LLC purple */
         }
@@ -759,7 +759,7 @@ color: #222222;</textarea>
 
         The `@keyframes` rule just *creates* the animation. To use it, it must be assigned to an element using the *animation name*.  Also, add a *duration*, so the browser knows how long an animation should take.
 
-        ```
+        ```css
         .heart-pulse {
           animation-name: pulse;
           animation-duration: 2s;
@@ -767,7 +767,7 @@ color: #222222;</textarea>
         ```
         This can also be written in shorthand.
 
-        ```
+        ```css
         .heart-pulse {
           animation: pulse 2s;
         }
@@ -781,7 +781,7 @@ color: #222222;</textarea>
 
         By default, animations run *once* from beginning to end. To repeat an animation, use the `animation-iteration-count` property with a number value or `infinite` to repeat the animation indefinitely.
 
-        ```
+        ```css
         .heart-pulse {
           animation-name: pulse;
           animation-duration: 2s;
@@ -790,7 +790,7 @@ color: #222222;</textarea>
         ```
         Here it is in shorthand.
 
-        ```
+        ```css
         .heart-pulse {
             animation: pulse 2s infinite;
         }
@@ -804,7 +804,7 @@ color: #222222;</textarea>
 
         Let's put this all together and apply this effect to `.heart-pulse`.
 
-        ```xml
+        ```html
         <span class="heart-pulse">&hearts;</span>
         ```
 
@@ -876,7 +876,7 @@ color: #222222;</textarea>
 
         Add a bunch of hearts to the page and give them each a class of `heart-falling`. Let's add them right under the `<main>` tag.
 
-        ```xml
+        ```html
         <main>
           <span class="heart-falling">&hearts;</span>
           <span class="heart-falling">&hearts;</span>
@@ -912,7 +912,7 @@ color: #222222;</textarea>
 
         This will make it possible to move a heart from top to bottom, regardless of where it is in the HTML.
 
-        ```
+        ```css
         .heart-falling {
           position: absolute;
         }
@@ -937,7 +937,7 @@ color: #222222;</textarea>
       <script type="text/template">
         #Class Exercise: Falling, Rotating Hearts - Step 3
 
-        ```
+        ```css
         .heart-falling:nth-of-type(1) {
           bottom: 1200px;
           left: 2%;
@@ -983,7 +983,7 @@ color: #222222;</textarea>
 
       Apply the animation to the falling hearts class.
 
-      ```xml
+      ```html
       <span class="heart-falling">&hearts;</span>
       <span class="heart-falling">&hearts;</span>
       <!-- ... add more spans to add more hearts! -->
