@@ -26,8 +26,10 @@
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <h2>Get Connected</h2>
-        <p><strong>Wifi:</strong> wifi network</p>
-        <p><strong>Password:</strong> wifi password</p>
+        <ul>
+          <li><strong>Wifi:</strong> wifi network</li>
+          <li><strong>Password:</strong> wifi password</li>
+        </ul>
         <hr>
 
         <h2>Download<br> & Install</h2>
@@ -35,7 +37,7 @@
           <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-valentines/archive/master.zip">http://bit.ly/llc-valentines</a>
             <ul>
               <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
-              <li>open <em>slides.html</em> in the browser to view the slides</li>
+              <li>open <code>slides.html</code> in the browser to view the slides</li>
             </ul>
           </li>
           <li>Atom Editor: <a href="http://atom.io">http://atom.io</a>
@@ -43,8 +45,7 @@
                 <li>Chromebook users can use <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en" target="_blank">Caret</a></li>
               </ul>
           </li>
-          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a>
-          <p>&nbsp;</p></li>
+          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
         </ol>
       </div>
       <footer>
@@ -108,14 +109,14 @@
 
         **Developer tools** allow us to *inspect* any web page to see how it's built. The tools can be accessed in a few ways:
 
-        * right-click/ctrl + click on any web page and select **Inspect**
+        * right-click/<kbd>Ctrl</kbd> + click on any web page and select **Inspect**
         * select the menu icon in the top right hand corner of the Chrome browser and select **More Tools > Developer Tools**
-        * keyboard shortcut: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
+        * keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> (PC) / <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> (Mac)
 
         **Text Editor** - a text editor like [Atom](http://atom.io).
 
         ---
-        ###Resources
+        ##Resources
 
         * More about dev tools: http://discover-devtools.codeschool.com
         * To set Chrome as your default browser, follow [these instructions](https://support.google.com/chrome/answer/95417?hl=en).
@@ -129,21 +130,21 @@
 
         Having a good text editor and learning how to use it to its full potential will help your work flow. Today, let's update the text wrapping option to make it easier to read long blocks of code and text.
 
-        Go to **Preferences** to open the customization options.<br />
+        1. Go to **Preferences** to open the customization options.<br />
         For Windows Users, go to the **File** menu and choose Settings.
 
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
 
-        Select the **Editor** tab in the left menu
+        2. Select the **Editor** tab in the left menu
 
-        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
-        Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
+        3. Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
 
-        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
 
         ---
-        ###Resources
+        ##Resources
 
         *   [Atom documentation](https://atom.io/docs)
         *   [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
@@ -157,7 +158,7 @@
       <script type="text/template">
         #Setting Up Our Work Flow
 
-        Inside of the folder you downloaded today, **llc-html-css-valentines-master**, there are a few different folders that contain many files.
+        Inside of the folder you downloaded today, `llc-html-css-valentines-master`, there are a few different folders that contain many files.
 
         ```xml
         llc-html-css-valentines-master
@@ -172,25 +173,26 @@
       <script type="text/template">
         #Setting Up Our Work Flow
 
-        1. Open the **project** folder in the text editor to edit your project.
+        1. Open the `project` folder in the text editor to edit your project.
         Go to **File** > ** Add Project Folder**. A popup will appear.
 
           ![](framework/img/workshop/editor-add-project-1.jpg)
 
-          * navigate to the **llc-html-css-valentines-master** folder
-          * select the **project** folder & click **Open**
+          * navigate to the `llc-html-css-valentines-master` folder
+          * select the `project` folder & click **Open**
           * the files will appear in the sidebar of the editor
 
-        1. Double click on **index.html** in the sidebar to open it in the editor
+        1. Double click on `index.html` in the sidebar to open it in the editor
+
         1. Go to Windows Explorer or Finder
-          * navigate to the **project** folder
-          * right-click/two-finger tap on **index.html**
+          * navigate to the `project` folder
+          * right-click/two-finger tap on `index.html`
           * choose **Open With > Chrome**
           * (double clicking the file will open it in your *default* browser)
 
         You should see this in your browser:
 
-        ![](framework/img/workshop/project-html.png)
+        ![Screenshot of project file loaded in web browser with unstyled text.](framework/img/workshop/project-html.png)
       </script>
     </section>
 
@@ -226,8 +228,8 @@
         ```
 
         ##Hint:
-        * **shift + comma key** for the left angled bracket
-        * **shift + period key** for the right angled bracket
+        * <kbd>Shift</kbd> + <kbd>,</kbd> key for the left angled bracket
+        * <kbd>Shift</kbd> + <kbd>.</kbd> key for the right angled bracket
       </script>
     </section>
 
@@ -235,7 +237,7 @@
       <script type="text/template">
         #HTML tags: `<title>`
 
-        Here are some tags already included in your project's **index.html**.
+        Here are some tags already included in your project's `index.html`.
 
         ##Title
 
@@ -257,7 +259,7 @@
         #HTML tags: Headings & Paragraphs
 
         ##Headings
-        * there are 6 heading tags (`<h1>,<h2>,...,<h6>`)
+        * there are 6 heading tags (`<h1>`, `<h2>` <span aria-label="through">…</span> `<h6>`)
         * follows a hierarchical structure
 
         ```xml
@@ -312,7 +314,7 @@
         ```
 
         ---
-        ###Resources
+        ##Resources
         * [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/)
         * [HMTL5Doctor](http://html5doctor.com/element-index/)
       </script>
@@ -359,15 +361,13 @@
       <script type="text/template">
         #CSS Syntax & Terminology
 
-        **Selectors** determine which element(s) to apply the styles to.
-
-        **Declarations** are the style rules, written using `property:value` pairs.  Also contained within a pair curly braces `{}`.
-
-        ```css
-        selector {
-          property: value;
-        }
-        ```
+        - **Selectors** determine which element(s) to apply the styles to.
+        - **Declarations** are the style rules, written using `property:value` pairs.  Also contained within a pair curly braces `{}`.
+          ```css
+          selector {
+            property: value;
+          }
+          ```
       </script>
     </section>
 
@@ -375,21 +375,19 @@
       <script type="text/template">
         #CSS Syntax & Terminology
 
-        **Properties** determine the type of style to be applied to
+        - **Properties** determine the type of style to be applied to
         the element (e.g. color) and followed by a colon `:` symbol.
-
-        **Values** are specific to the property and must end with a semi-colon `;` symbol to indicate the instruction is done.
-
-        ```css
-        selector {
-          property: value;
-        }
-        ```
-        ```css
-        h1 {
-          font-size: 40px;
-        }
-        ```
+        - **Values** are specific to the property and must end with a semi-colon `;` symbol to indicate the instruction is done.
+          ```css
+          selector {
+            property: value;
+          }
+          ```
+          ```css
+          h1 {
+            font-size: 40px;
+          }
+          ```
       </script>
     </section>
 
@@ -439,12 +437,13 @@
       <script type="text/template">
         #Class exercise: Add the CSS file
 
-        There's a `styles.css` file in your project folder, containing some base CSS styles.
+        There's a `styles.css` file in your `project` folder, containing some base CSS styles.
 
         Let's link the CSS file to the HTML page and see what those base styles look like on the page.
 
-        **Pro tip!**
-        Here's a shortcut. In the editor type "link" + tab key. Ta da!
+        ---
+        ##Pro tip!
+        Here's a shortcut. In the editor type "link" + <kbd>Tab</kbd> key. Ta da!
       </script>
     </section>
 
@@ -471,7 +470,7 @@
       <script type="text/template">
         #Class exercise: Adding Web Fonts
 
-        Copy the `<link>` code snippet and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
+        Copy the `<link>` code snippet and add it the `<head>` of your page, before your `styles.css`, to reference the Google Font CSS.
 
         ```
         <head>
@@ -483,7 +482,7 @@
         ```
 
         Now you're ready to use the new fonts!
-        Use the font-family name listed in the Google Fonts page.
+        Use the `font-family` name listed in the Google Fonts page.
 
         ```
         font-family: 'Sacramento', cursive;
@@ -552,7 +551,7 @@
       <script type="text/template">
         #Class exercise: Add typography styles
 
-        In **styles.css**, let's add a base font for the page and a specific font fonts for the main heading and quote.
+        In `styles.css`, let's add a base font for the page and a specific font fonts for the main heading and quote.
 
         1. Add the **Lato** font to `body` so the nested elements *inherit* the styles.
 
@@ -622,6 +621,8 @@ color: #222222;</textarea>
           }
           ```
 
+        ---
+        ##Resources
         Here's a great colour resource: http://colours.neilorangepeel.com/
       </script>
     </section>
@@ -717,7 +718,7 @@ color: #222222;</textarea>
 
         Use the `@keyframes` rule to apply time-based styles. Declare an animation name and mid-way points where the properties will be animated.
 
-        To create different mid-way points, use percentages (0% refers to the beginning of the animation, 100% is the end of an animation).
+        To create different mid-way points, use percentages (`0%` refers to the beginning of the animation, `100%` is the end of an animation).
 
         ```css
         @keyframes animation-name {
@@ -826,7 +827,10 @@ color: #222222;</textarea>
           }
         }
         ```
-        ###Resource: More about [display](https://css-tricks.com/almanac/properties/d/display/).
+
+        ---
+        ##Resource:
+        More about [display](https://css-tricks.com/almanac/properties/d/display/).
       </script>
     </section>
 
@@ -957,7 +961,7 @@ color: #222222;</textarea>
       <script type="text/template">
       #Class Exercise: Falling, Rotating Hearts - Step 4
 
-      Create a @keyframe animation to move the hearts from the top to bottom.  At then *end* of the animation, use a negative bottom value to make the hearts appear to go offscreen.
+      Create a `@keyframe` animation to move the hearts from the top to bottom.  At then *end* of the animation, use a negative bottom value to make the hearts appear to go offscreen.
 
       (Rotate animation to be added.)
 
