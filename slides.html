@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/a11y/plugin.css">
   <link rel="shortcut icon" href="framework/img/favicon.ico">
 
   <!-- Takes care of CSS3 prefixes -->
@@ -26,8 +27,10 @@
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <h2>Get Connected</h2>
-        <p><strong>Wifi:</strong> wifi network</p>
-        <p><strong>Password:</strong> wifi password</p>
+        <ul>
+          <li><strong>Wifi:</strong> wifi network</li>
+          <li><strong>Password:</strong> wifi password</li>
+        </ul>
         <hr>
 
         <h2>Download<br> & Install</h2>
@@ -35,7 +38,7 @@
           <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-valentines/archive/master.zip">bit.ly/llc-valentines</a>
             <ul>
               <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
-              <li>open <em>slides.html</em> in the browser to view the slides</li>
+              <li>open <code>slides.html</code> in the browser to view the slides</li>
             </ul>
           </li>
           <li>Atom Editor: <a href="https://atom.io">Atom.io</a>
@@ -108,14 +111,14 @@
 
         **Developer tools** allow us to *inspect* any web page to see how it's built. The tools can be accessed in a few ways:
 
-        * right-click/ctrl + click on any web page and select **Inspect**
+        * right-click/<kbd>Ctrl</kbd> + click on any web page and select **Inspect**
         * select the menu icon in the top right hand corner of the Chrome browser and select **More Tools > Developer Tools**
-        * keyboard shortcut: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
+        * keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> (PC) / <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> (Mac)
 
         **Text Editor** - a text editor like [Atom](https://atom.io).
 
         ---
-        ###Resources
+        ##Resources
 
         * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
         * [Make Chrome your default browser](https://support.google.com/chrome/answer/95417?hl=en)
@@ -129,21 +132,21 @@
 
         Having a good text editor and learning how to use it to its full potential will help your work flow. Today, let's update the text wrapping option to make it easier to read long blocks of code and text.
 
-        Go to **Preferences** to open the customization options.<br />
+        1. Go to **Preferences** to open the customization options.<br />
         For Windows Users, go to the **File** menu and choose Settings.
 
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
 
-        Select the **Editor** tab in the left menu
+        2. Select the **Editor** tab in the left menu
 
-        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
-        Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
+        3. Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
 
-        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
 
         ---
-        ###Resources
+        ##Resources
 
         *   [Atom documentation](https://atom.io/docs)
         *   [Atom Flight Manual](https://flight-manual.atom.io/)
@@ -157,7 +160,7 @@
       <script type="text/template">
         #Setting Up Our Work Flow
 
-        Inside of the folder you downloaded today, **llc-html-css-valentines-master**, there are a few different folders that contain many files.
+        Inside of the folder you downloaded today, `llc-html-css-valentines-master`, there are a few different folders that contain many files.
 
         ```xml
         llc-html-css-valentines-master
@@ -172,25 +175,26 @@
       <script type="text/template">
         #Setting Up Our Work Flow
 
-        1. Open the **project** folder in the text editor to edit your project.
+        1. Open the `project` folder in the text editor to edit your project.
         Go to **File** > ** Add Project Folder**. A popup will appear.
 
           ![](framework/img/workshop/editor-add-project-1.jpg)
 
-          * navigate to the **llc-html-css-valentines-master** folder
-          * select the **project** folder & click **Open**
+          * navigate to the `llc-html-css-valentines-master` folder
+          * select the `project` folder & click **Open**
           * the files will appear in the sidebar of the editor
 
-        1. Double click on **index.html** in the sidebar to open it in the editor
+        1. Double click on `index.html` in the sidebar to open it in the editor
+
         1. Go to Windows Explorer or Finder
-          * navigate to the **project** folder
-          * right-click/two-finger tap on **index.html**
+          * navigate to the `project` folder
+          * right-click/two-finger tap on `index.html`
           * choose **Open With > Chrome**
           * (double clicking the file will open it in your *default* browser)
 
         You should see this in your browser:
 
-        ![](framework/img/workshop/project-html.png)
+        ![Screenshot of project file loaded in web browser with unstyled text.](framework/img/workshop/project-html.png)
       </script>
     </section>
 
@@ -221,13 +225,13 @@
 
         Left `<` & `>` right angled brackets surround the tag name. Tags usually come in pairs — an opening tag and a *closing tag*. Note the a forward slash in the closing tag:
 
-        ```xml
+        ```html
         <tagname>Content goes between the tags.</tagname>
         ```
 
         ##Hint:
-        * **shift + comma key** for the left angled bracket
-        * **shift + period key** for the right angled bracket
+        * <kbd>Shift</kbd> + <kbd>,</kbd> key for the left angled bracket
+        * <kbd>Shift</kbd> + <kbd>.</kbd> key for the right angled bracket
       </script>
     </section>
 
@@ -235,7 +239,7 @@
       <script type="text/template">
         #HTML tags: `<title>`
 
-        Here are some tags already included in your project's **index.html**.
+        Here are some tags already included in your project's `index.html`.
 
         ##Title
 
@@ -244,10 +248,10 @@
         * displays in the browser's tab, search engine results and bookmarks
         * is the first bit of content announed by screan readers
 
-        ```xml
+        ```html
         <title>Page Title</title>
         ```
-        ```xml
+        ```html
         <title>Valentine's Day Love Bomb!</title>
         ```
       </script>
@@ -258,10 +262,10 @@
         #HTML tags: Headings & Paragraphs
 
         ##Headings
-        * there are 6 heading tags (`<h1>,<h2>,...,<h6>`)
+        * there are 6 heading tags (`<h1>`, `<h2>` <span aria-label="through">…</span> `<h6>`)
         * follows a hierarchical structure
 
-        ```xml
+        ```html
         <h1>Most Important Heading</h1>
         <h2>Second Most Important Heading</h2>
         ```
@@ -269,7 +273,7 @@
         ##Paragraphs
         * Created with the `<p></p>` tags.
 
-        ```xml
+        ```html
         <p>I'm a paragraph.</p>
         ```
       </script>
@@ -284,7 +288,7 @@
         * used to indicate that the enclosed text is a quotation
         * a source of the quotation may be given using the `<cite>` tag
 
-        ```xml
+        ```html
         <blockquote>
           <p>You know you're in love when you can't fall asleep because reality is finally better
           than your dreams.</p>
@@ -308,7 +312,7 @@
 
         **Images**: like anchors, also requires an additional attribute, `src`, for linking to the image file and `alt` to provide alternative text for blind and low-vision users who require a screen reader.
 
-        ```
+        ```html
         <img src="director/image-file.jpg" alt="alternative text">
         ```
 
@@ -363,15 +367,13 @@
       <script type="text/template">
         #CSS Syntax & Terminology
 
-        **Selectors** determine which element(s) to apply the styles to.
-
-        **Declarations** are the style rules, written using `property:value` pairs.  Also contained within a pair curly braces `{}`.
-
-        ```css
-        selector {
-          property: value;
-        }
-        ```
+        - **Selectors** determine which element(s) to apply the styles to.
+        - **Declarations** are the style rules, written using `property:value` pairs.  Also contained within a pair curly braces `{}`.
+          ```css
+          selector {
+            property: value;
+          }
+          ```
       </script>
     </section>
 
@@ -379,21 +381,19 @@
       <script type="text/template">
         #CSS Syntax & Terminology
 
-        **Properties** determine the type of style to be applied to
+        - **Properties** determine the type of style to be applied to
         the element (e.g. color) and followed by a colon `:` symbol.
-
-        **Values** are specific to the property and must end with a semi-colon `;` symbol to indicate the instruction is done.
-
-        ```css
-        selector {
-          property: value;
-        }
-        ```
-        ```css
-        h1 {
-          font-size: 40px;
-        }
-        ```
+        - **Values** are specific to the property and must end with a semi-colon `;` symbol to indicate the instruction is done.
+          ```css
+          selector {
+            property: value;
+          }
+          ```
+          ```css
+          h1 {
+            font-size: 40px;
+          }
+          ```
       </script>
     </section>
 
@@ -405,7 +405,7 @@
 
         Note the syntax below:
 
-        ```
+        ```css
         p {
           color: #B109AA; /* LLC purple */
         }
@@ -434,7 +434,7 @@
         - The value of the `rel` attribute is the relationship of this CSS file to the HTML file we are inserting it into.
         - The value of the `href` is the location of the style sheet in your folder structure.
 
-        ```
+        ```html
         <head>
           <title>Page Title</title>
           <meta charset="utf-8">
@@ -448,7 +448,7 @@
       <script type="text/template">
         #Class exercise: Add the CSS file
 
-        There's a `styles.css` file in your project folder, containing some base CSS styles.
+        There's a `styles.css` file in your `project` folder, containing some base CSS styles.
 
         Let's link the CSS file to the HTML page and see what those base styles look like on the page.
 
@@ -476,9 +476,9 @@
       <script type="text/template">
         #Class exercise: Adding Web Fonts
 
-        Copy the `<link>` code snippet and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
+        Copy the `<link>` code snippet and add it the `<head>` of your page, before your `styles.css`, to reference the Google Font CSS.
 
-        ```
+        ```html
         <head>
           <meta charset="UTF-8">
           <title>Love Bomb!</title>
@@ -488,9 +488,9 @@
         ```
 
         Now you're ready to use the new fonts!
-        Use the font-family name listed in the Google Fonts page.
+        Use the `font-family` name listed in the Google Fonts page.
 
-        ```
+        ```css
         font-family: 'Sacramento', cursive;
         font-family: 'Lato', sans-serif;
         ```
@@ -509,7 +509,7 @@
 
         A strength of CSS is styles can be inherited from parent to child elements. Nested HTML elements create a family tree structure.
 
-        ```
+        ```html
         <body><!-- parent of h1 and p -->
           <h1>My Website</h1><!-- child of body, sibling of p -->
           <p>This is a paragraph.</p><!-- child of body, sibling of h1 -->
@@ -519,7 +519,7 @@
 
         CSS properties in the body selector are inherited by the descendant elements. A more specific selector will override the inherited values.
 
-        ```
+        ```css
         body {
           color: #222222;
         }
@@ -557,7 +557,7 @@
       <script type="text/template">
         #Class exercise: Add typography styles
 
-        In **styles.css**, let's add a base font for the page and a specific font fonts for the main heading and quote.
+        In `styles.css`, let's add a base font for the page and a specific font fonts for the main heading and quote.
 
         1. Add the **Lato** font to `body` so the nested elements *inherit* the styles.
 
@@ -573,7 +573,7 @@
 
         Here's what was added:
 
-        ```
+        ```css
         body {
           font-family: 'Lato', sans-serif;
         }
@@ -590,7 +590,7 @@
     <section class="slide">
       <h1>Font Styles & Typography</h1>
       <p>Before we go back to the CSS file, let's experiment with a few CSS properties by changing some of the values below.</p>
-      <textarea class="snippet" data-subject="#typography-example">line-height: 1.25;
+      <textarea class="snippet" data-subject="#typography-example" aria-label="Edit code snippet">line-height: 1.25;
 font-family: Helvetica, Arial, sans-serif;
 font-size: 18px;
 font-weight: normal;
@@ -656,6 +656,7 @@ color: #222222;</textarea>
         <span aria-hidden="true">&#9829;</span>
         <span aria-hidden="true">&hearts;</span>
         ```
+        
         ```xml
         <p>This goes out to all the volunteers, mentors, instructors and learners across the country. Thanks for making LLC so awesome! Happy Valentine's Day! <span aria-hidden="true">&hearts;</span></p>
         ```
@@ -670,7 +671,7 @@ color: #222222;</textarea>
 
         When **type selectors** are too general (targeting the HTML element), use a `class` **attributes** to attach extra identifying information.  Use a leading period in the CSS to select it.
 
-        ```
+        ```css
         span { /* targets ALL span elements */
           color: blue;
         }
@@ -698,7 +699,7 @@ color: #222222;</textarea>
 
         In the CSS, try changing the color.
 
-        ```
+        ```css
         .heart-pulse {
           color: #B109AA; /* LLC purple */
         }
@@ -730,7 +731,7 @@ color: #222222;</textarea>
 
         Use the `@keyframes` rule to apply time-based styles. Declare an animation name and mid-way points where the properties will be animated.
 
-        To create different mid-way points, use percentages (0% refers to the beginning of the animation, 100% is the end of an animation).
+        To create different mid-way points, use percentages (`0%` refers to the beginning of the animation, `100%` is the end of an animation).
 
         ```css
         @keyframes animation-name {
@@ -776,7 +777,7 @@ color: #222222;</textarea>
 
         The `@keyframes` rule just *creates* the animation. To use it, it must be assigned to an element using the *animation name*.  Also, add a *duration*, so the browser knows how long an animation should take.
 
-        ```
+        ```css
         .heart-pulse {
           animation-name: pulse;
           animation-duration: 2s;
@@ -784,7 +785,7 @@ color: #222222;</textarea>
         ```
         This can also be written in shorthand.
 
-        ```
+        ```css
         .heart-pulse {
           animation: pulse 2s;
         }
@@ -798,7 +799,7 @@ color: #222222;</textarea>
 
         By default, animations run *once* from beginning to end. To repeat an animation, use the `animation-iteration-count` property with a number value or `infinite` to repeat the animation indefinitely.
 
-        ```
+        ```css
         .heart-pulse {
           animation-name: pulse;
           animation-duration: 2s;
@@ -807,7 +808,7 @@ color: #222222;</textarea>
         ```
         Here it is in shorthand.
 
-        ```
+        ```css
         .heart-pulse {
             animation: pulse 2s infinite;
         }
@@ -847,6 +848,7 @@ color: #222222;</textarea>
         ---
         ##Resource:
         - [CSS-Tricks: display](https://css-tricks.com/almanac/properties/d/display/)
+        
       </script>
     </section>
 
@@ -896,7 +898,7 @@ color: #222222;</textarea>
 
         Add a bunch of hearts to the page and give them each a class of `heart-falling`. Let's add them right under the `<main>` tag.
 
-        ```xml
+        ```html
         <main>
           <span class="heart-falling" aria-hidden="true">&hearts;</span>
           <span class="heart-falling" aria-hidden="true">&hearts;</span>
@@ -931,7 +933,7 @@ color: #222222;</textarea>
 
         This will make it possible to move a heart from top to bottom, regardless of where it is in the HTML.
 
-        ```
+        ```css
         .heart-falling {
           position: absolute;
         }
@@ -956,7 +958,7 @@ color: #222222;</textarea>
       <script type="text/template">
         #Class Exercise: Falling, Rotating Hearts - Step 3
 
-        ```
+        ```css
         .heart-falling:nth-of-type(1) {
           bottom: 1200px;
           left: 2%;
@@ -976,7 +978,7 @@ color: #222222;</textarea>
       <script type="text/template">
       #Class Exercise: Falling, Rotating Hearts - Step 4
 
-      Create a @keyframe animation to move the hearts from the top to bottom.  At then *end* of the animation, use a negative bottom value to make the hearts appear to go offscreen.
+      Create a `@keyframe` animation to move the hearts from the top to bottom.  At then *end* of the animation, use a negative bottom value to make the hearts appear to go offscreen.
 
       (Rotate animation to be added.)
 
@@ -1091,6 +1093,7 @@ color: #222222;</textarea>
   <script src="framework/scripts/plugins/markdown/markdown.js"></script>
   <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/plugins/a11y/plugin.js"></script>
   <script src="framework/scripts/llc.js"></script>
   <script>
     var slideshow = new SlideShow();
