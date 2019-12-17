@@ -1,9 +1,14 @@
-#Ladies Learning Code
+# Ladies Learning Code
 
-##Valentine’s Day: Creating Valentine’s Day Card with HTML & CSS
+## Valentine’s Day: Creating Valentine’s Day Card with HTML & CSS
 
 A 3hr introductory HTML & CSS3 animations workshop.
 
+## Quick Links
+
+ Preview slides: http://ladieslearningcode.github.io/llc-html-css-valentines/slides-en.html
+ 
+ Instructor notes: http://ladieslearningcode.github.io/llc-html-css-valentines/notes-en.html
 
 
 ### Attributions
