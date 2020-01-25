@@ -1,0 +1,1113 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Femmes en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/a11y/plugin.css">
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Logo de Femmes en programmation">Bienvenue!</h1>
+
+      <div class="instructions">
+        <!-- AJOUTEZ LES INFOS DU WI-FI ICI -->
+        <h2>Connectez-vous</h2>
+        <ul>
+          <li><strong>Wi-Fi :</strong> réseau Wi-Fi</li>
+          <li><strong>Mot de passe :</strong> mot de passe du Wi-Fi</li>
+        </ul>
+        <hr>
+
+        <h2>Téléchargez<br> et installez</h2>
+        <ol class="downloads">
+          <li>Fichiers d’apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/llc-html-css-valentines/archive/master.zip">bit.ly/llc-valentines</a>
+            <ul>
+              <li>Dézippez le dossier (<em>Extraire tout</em> sur Windows).</li>
+              <li>Ouvrez <code>slides-fr.html</code> dans le navigateur pour afficher les diapositives.</li>
+            </ul>
+          </li>
+          <li>Éditeur Atom : <a href="https://atom.io">Atom.io</a>
+            <ul>
+                <li>Si vous avez un ordinateur Chromebook, utilisez <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en" target="_blank">Caret</a>.</li>
+              </ul>
+          </li>
+          <li>Navigateur Chrome : <a href="https://www.google.com/chrome/browser/desktop/">Google.com/chrome</a>
+          <p>&nbsp;</p></li>
+        </ol>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par <a href="http://christinatruong.com">Christina Truong</a> pour <a prefix="cc: https://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Femmes en programmation</a>.</p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide intro">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Logo de Femmes en programmation">
+      <h1 class="heading-bg">
+        <span>Intro au HTML et aux<br> animations CSS :<br>
+        édition Saint-Valentin</span>
+      </h1>
+
+      <!-- INDIQUEZ LES INFORMATIONS SUR LA FORMATRICE -->
+      <!-- <img class="instructor" src="https://placehold.it/225x225" alt="Nom de la formatrice">
+      <h2><span class="cursive">avec</span> Nom de la formatrice</h2>
+      <ul>
+        <li><a href="mailto:">allo@courriel.com</a></li>
+        <li><a href="http://siteweb.com">siteweb.com</a></li>
+        <li><a href="https://twitter.com/">@twitter</a></li>
+      </ul> -->
+
+      <div class="sponsor">
+      <!--p>En partenariat avec<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p-->
+      </div>
+      <footer>
+        <a class="left" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par <a href="http://christinatruong.com">Christina Truong</a> pour <a prefix="cc: https://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Femmes en programmation</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Le code des programmeuses et des programmeurs
+
+        1. Faites preuve de solidarité et d’ouverture.
+        1. Choisissez bien vos mots et vos actions.
+        1. Respectez l'espace des autres durant les conversations.
+        1. Posez des questions.
+        1. Faites de votre mieux (et amusez-vous!).
+
+      </script>
+    </section>
+
+    <section class="slide centered">
+      <h1> Le projet du jour</h1>
+
+      <p data-height="625" data-theme-id="0" data-slug-hash="xxbBJGr" data-default-tab="result" data-user="learningcode" class='codepen'>Regardez le projet <a href="https://codepen.io/learningcode/pen/xxbBJGr">bombe d’amour pour la Saint-Valentin</a> créé par Femmes en programmation (<a href="https://codepen.io/learningcode">@learningcode</a>) sur <a href='https://codepen.io'>CodePen</a>.</p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Accéder aux outils de développement
+
+        **Navigateur :** Utilisez un navigateur Web moderne comme [Google Chrome](https://www.google.com/chrome/) qui répond aux normes actuelles du Web et comprend de bons outils de développement.
+
+        Les **outils de développement** nous permettent d’*inspecter* toutes les pages Web pour comprendre comment elles ont été créées. Nous pouvons accéder aux outils de différentes façons :
+
+        * En faisant un clic droit / en tapant <kbd>Ctrl</kbd> et en cliquant sur n’importe quelle page Web, et en sélectionnant sur **Inspecter**.
+        * En cliquant sur l’icône du menu dans le coin supérieur droit de Chrome et en sélectionnant **Plus d’outils > Outils de développement**.
+        * En utilisant un raccourci de clavier : <kbd>Ctrl</kbd> + <kbd>Maj</kbd> + <kbd>I</kbd> (Windows) / <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> (Mac).
+
+        Nous avons aussi besoin d’un **éditeur de texte**, comme [Atom](https://atom.io).
+
+        ---
+        ##Ressources
+
+        * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
+        * [Configurer Chrome comme navigateur par défaut](https://support.google.com/chrome/answer/95417?hl=fr)
+        * Consultez le site [BrowseHappy.com](https://browsehappy.com) pour en savoir plus sur les navigateurs modernes.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #À la découverte d'Atom
+
+        En prenant le temps de découvrir les fonctionnalités de votre éditeur de texte, vous améliorerez grandement votre efficacité. À cet effet, modifions l’option d’habillage du texte pour rendre les longs blocs de code et le texte plus faciles à lire.
+
+        1. Allez dans **Preferences** pour afficher les options de personnalisation.<br />
+        Si vous utilisez Windows, allez dans le menu **File** et choisissez **Settings**.
+
+          ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+
+        2. Sélectionnez l’onglet **Editor** dans le menu à gauche.
+
+          ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+
+        3. Assurez-vous que les cases des options **Soft Wrap** (Habillage du texte) et **Show Indent Guide** (Afficher l’indentation) sont bien cochées.
+
+          ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+
+        ---
+        ##Ressources
+
+        *  [Documentation d’Atom](https://atom.io/docs)
+        *   [Atom Flight Manual](https://flight-manual.atom.io/)
+        *   [Thèmes pour Atom](https://atom.io/themes)
+        *  [Snippets](https://github.com/atom/snippets) - Outil pour créer des raccourcis d’extraits de code
+        *   [Trois trucs pour programmer plus rapidement dans Atom](https://medium.com/@svinkle/a-few-handy-atom-editor-tips-c38df3b5aec3)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Dossiers de travail
+
+        À l’intérieur du dossier que vous avez téléchargé, `llc-html-css-valentines-master`, il y a différents dossiers qui contiennent plusieurs fichiers.
+
+        ```xml
+        llc-html-css-valentines-master
+          |-- framework // Ce dossier contient les fichiers nécessaires pour afficher ces diapositives. Ne modifiez PAS son contenu!
+          |-- projet // Ce dossier contient les fichiers de votre projet.
+          |-- slides-fr.html // Vous lisez ce fichier en ce moment!
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Dossiers de travail
+
+        1. Ouvrez le dossier `projet` dans l’éditeur de texte pour modifier votre projet.
+        Allez dans **File** > ** Add Project Folder**. Une fenêtre s'affichera.
+
+          ![](framework/img/workshop/editor-add-project-1.jpg)
+
+          * Allez dans le dossier `llc-html-css-valentines-master`.
+          * Sélectionnez le dossier `projet` et cliquez sur **Ouvrir**.
+          * Les fichiers s'afficheront dans la barre latérale de l’éditeur.
+
+        1. Double-cliquez sur `index.html` dans la barre latérale pour ouvrir le fichier dans l’éditeur.
+
+        1. Allez dans l’Explorateur Windows ou dans Finder.
+          * Accédez au dossier `projet`.
+          * Double-cliquez ou tapez à deux doigts sur `index.html`.
+          * Sélectionnez **Ouvrir avec > Chrome**.
+          * (Si vous double-cliquez sur le fichier, il s’ouvrira dans votre *navigateur par défaut*.)
+
+        Ceci devrait s'afficher dans votre navigateur :
+
+        ![Capture d’écran du fichier de projet affiché dans la fenêtre du navigateur Web avec du texte sans style.](framework/img/workshop/project-html_fr.png)
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #HTML
+        ##Hypertext Markup Language (langage de balisage hypertexte)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML : introduction
+
+        Avez-vous remarqué qu’il y a du contenu dans l’éditeur du texte que l’on ne voit pas dans le navigateur?  C’est du HTML!
+
+        Le langage HTML a été conçu pour être lu par un navigateur Web afin qu’il puisse interpréter le sens du contenu.
+
+        Les « balises » du HTML décrivent le sens du contenu, pas son apparence. En fait, c'est plutôt le langage CSS qui décrit l'apparence du contenu.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML : introduction
+
+        Pour afficher du contenu dans le navigateur, nous devons utiliser des *balises*.
+
+        Un chevron droit `<` et un chevron gauche `>` entourent le nom de la balise. Les balises viennent habituellement en paire; il y a une balise d’*ouverture* et une balise de *fermeture*. Dans l'exemple suivant, vous remarquerez qu’il y a une barre oblique vers l'avant dans la balise de fermeture :
+
+        ```html
+        <nomdelabalise>Le contenu va entre les balises.</nomdelabalise>
+        ```
+
+        ##Indice :
+        * Pour écrire un chevron gauche, tapez sur <kbd>Command</kbd> + <kbd>,</kbd> (clavier Français canadien, Apple) ou sur la touche <kbd><</kbd> (clavier Français (Canada), Windows).
+        * Pour écrire un chevron droit, tapez sur <kbd>Command</kbd> + <kbd>.</kbd> (clavier Français canadien, Apple) ou sur <kbd>Maj</kbd> + <kbd><</kbd> (clavier Français (Canada), Windows).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Balises HTML : `<title>`
+
+        Il y a déjà des balises dans le fichier `index.html` de votre projet.
+
+        ##Titre (title)
+
+        * Cette balise se trouve dans la section `<head>`, c'est-à-dire la tête du document HTML.
+        * Elle définit le titre de la page.
+        * Ce titre s'affiche sur l’onglet de la page, dans les favoris du navigateur ainsi que dans les résultats des moteurs de recherche.
+        * Il s’agit de la première ligne de contenu annoncée par les lecteurs d’écran.
+
+        ```html
+        <title>Titre de page</title>
+        ```
+        ```html
+        <title>Une bombe d’amour pour la Saint-Valentin!</title>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Balises HTML : En-têtes et paragraphes
+
+        ##En-têtes (headings)
+        * Il y a 6 balises d’en-tête (`<h1>`, `<h2>` <span aria-label="through">…</span> `<h6>`).
+        * Les balises d’en-tête ont une hiérarchie.
+
+        ```html
+        <h1>En-tête le plus important</h1>
+        <h2>Deuxième en-tête le plus important</h2>
+        ```
+
+        ##Paragraphes (p)
+        * Les paragraphes sont définis par les balises `<p></p>`.
+
+        ```html
+        <p>Ceci est un paragraphe.</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Balises HTML : `<blockquote>`
+
+        ##Citations en bloc (blockquote)
+        * Les citations en bloc sont définies par les balises `<blockquote></blockquote>`.
+        * Elles indiquent que le texte à l’intérieur des balises est une citation.
+        * Il est possible d'ajouter une source à la citation avec la balise `<cite>`.
+
+        ```html
+        <blockquote>
+          <p>Tu sais que tu aimes quelqu’un quand tu ne peux pas dormir parce que la réalité est plus belle que
+          tes rêves.</p>.
+          <cite>&#x2015; Dr Seuss</cite>
+        </blockquote>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Autres balises HTML
+
+        Voici d'autres balises dont vous pourriez vous servir :
+
+        **Balise d’ancrage (lien)** : Cette balise nécessite un attribut `href` pour préciser l'emplacement du lien.
+
+        ```
+        <a href="https://siteweb.com">lien</a>
+        ```
+
+        **Balise d’image** : Comme les balises  d’ancrage, les balises d’image nécessitent un attribut, `src`, pour faire un lien vers le fichier image. De plus, l'attribut `alt` sert à ajouter du texte alternatif qui décrira l’image pour les personnes malvoyantes utilisant un lecteur d’écran.
+
+        ```html
+        <img src="directeur/fichier-image.jpg" alt="texte alternatif">
+        ```
+
+        ---
+        ###Ressources
+
+        * [MDN : documentation sur les éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice n°1 : personnaliser le contenu (15 minutes)
+
+        Pour le moment, nous afficherons le projet avec les styles par défaut du navigateur. Plus tard, nous utiliserons le CSS pour modifier les couleurs, la taille des éléments, la police du texte et d'autres aspects de l'apparence du site. Nous garderons les styles par défaut pour l’instant.
+
+        1. Modifiez le contenu dans les en-têtes `h1` et `h2`.
+        2. Modifiez le paragraphe. N'hésitez pas à en ajouter d'autres!
+        3. Modifiez la citation, mais utilisez toujours la balise `blockquote`.
+
+        ---
+
+        ##Truc de pro :
+        Si vous ne savez pas quoi écrire, utilisez du faux texte :
+
+        * [Lorem Ipsum](https://www.lipsum.com/)
+        * [15 générateurs de faux texte pour mettre du piquant à vos maquettes graphiques](https://www.shopify.ca/partners/blog/79940998-15-funny-lorem-ipsum-generators-to-shake-up-your-design-mockups)
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #CSS
+        ##CSS : Cascading Style Sheets (feuilles de style en cascade)
+      </script>
+    </section>
+
+    <section class="slide highlight" data-markdown>
+      <script type="text/template">
+        #CSS : introduction
+
+        Les navigateurs appliquent les styles par défaut liés aux balises HTML, comme le texte en gras pour les en-têtes et les espaces entre les paragraphes.
+
+        Le HTML définit le *sens* du *contenu*.
+
+        Le CSS définit la *présentation* et l’*apparence* de la page. Grâce à lui, vous pouvez modifier votre site et le mettre à votre goût!
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ##CSS : syntaxe et terminologie
+
+        - Les **sélecteurs** déterminent les éléments auxquels les styles seront appliqués.
+        - Les **déclarations** sont les règles de style. Celles-ci sont écrites selon le format `propriété:valeur`. Les propriétés et les valeurs viennent toujours en paire.  Elles sont toujours contenues à l’intérieur d’une paire d’accolades `{}`.
+          ```css
+          sélecteur {
+            propriété: valeur;
+          }
+          ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ##CSS : syntaxe et terminologie
+
+        - Les **propriétés** déterminent le type de style qui sera appliqué
+        à l’élément (p. ex. : `color` pour la couleur) et sont suivies d’un deux-points `:`.
+        - Les **valeurs** sont spécifiques aux propriétés et se terminent toujours par un point-virgule `;` pour indiquer la fin de l’instruction.
+          ```css
+          sélecteur {
+            propriété: valeur;
+          }
+          ```
+          ```css
+          h1 {
+            font-size: 40px;
+          }
+          ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Commentaires
+
+        Les commentaires sont pratiques pour laisser des notes aux autres ou à soi, pour organiser des blocs de code ou pour « cacher » du code à utiliser plus tard.
+
+        Regardez la syntaxe du code ci-dessous :
+
+        ```css
+        p {
+          color: #B109AA; /* Mauve du logo de Femmes en programmation */
+        }
+        /* STYLES D'EN-TÊTE */
+        header {
+          width: 80%;
+        }
+        /*  Code pour plus tard
+        .slider {
+          width: 100px;
+          background: red;
+        }
+        */
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Mais où va le CSS?
+
+        Il y a différentes façons d'ajouter du CSS à une page Web. Aujourd’hui, nous utiliserons la méthode du lien vers une feuille de style externe.
+
+        Nous mettrons un lien vers la feuille de style dans la section `<head>` avec une balise `<link>` et deux **attributs**, `rel` et `href` :
+
+        - La valeur de l'attribut `rel` est la relation entre le fichier CSS et le fichier HTML dans lequel nous ajoutons le lien. Ici, il s'agit d'une feuille de style (stylesheet).
+        - La valeur de l'attribut `href` est l’emplacement de la feuille de style dans vos dossiers (le fichier style.css).
+
+        ```html
+        <head>
+          <title>Titre de page</title>
+          <meta charset="utf-8">
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : ajouter le fichier CSS
+
+        Dans le dossier `projet`, il y a un fichier `styles.css` qui contient des styles CSS de base.
+
+        Lions le fichier CSS à la page HTML et voyons voir les styles de base qui s'y appliquent.
+
+        ---
+        ##Truc de pro :
+        Il y a un raccourci. Dans l’éditeur de texte, tapez « link » et appuyez sur la touche Tab. Tadam!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : choisir une police Web
+
+        Grâce à des services comme [Google Fonts](https://www.google.com/fonts/), nous pouvons facilement utiliser différentes polices de texte en faisant un lien directement vers leur feuille de style. Pour utiliser des polices Web :
+
+        1. Allez à l'adresse [Google.com/fonts](https://www.google.com/fonts).
+        1. Cliquez sur le bouton « Select this font » (l’icône `+`) pour sélectionner une police.
+          * L’exemple de projet de Femmes en programmation utilise les polices [Sacramento](https://fonts.google.com/specimen/Sacramento) (cursive) et [Lato](https://fonts.google.com/specimen/Lato) (linéale, « sans-serif »).
+          * Vous pourrez changer vos polices dans un prochain exercice.
+        1. Activez le bouton « Family Selected » pour obtenir le code.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : ajouter des polices Web
+
+        Copiez l'extrait de code qui commence par `<link>` et ajoutez-le dans la section `<head>` de la page avant `styles.css` pour faire référence à la feuille de style CSS de Google Fonts.
+
+        ```html
+        <head>
+          <meta charset="UTF-8">
+          <title>Bombe d’amour!</title>
+          <link href='https://fonts.googleapis.com/css?family=Sacramento|Lato:300' rel='stylesheet' type='text/css'>
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        ```
+
+        Vous pouvez maintenant utiliser vos nouvelles polices sur votre page!
+        Utilisez le nom `font-family` indiqué sur la page Google Fonts.
+
+        ```css
+        font-family: 'Sacramento', cursive;
+        font-family: 'Lato', sans-serif;
+        ```
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Sélecteurs CSS
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Héritage et spécificité
+
+        Les styles CSS peuvent être hérités d’un élément parent à un élément enfant. Les éléments HTML imbriqués ont une structure ressemblant à celle d’un arbre généalogique.
+
+        ```html
+        <body><!-- parent des balises h1 et p -->
+          <h1>Mon site Web</h1><!-- enfant des balises body, soeur de p -->
+          <p>Ceci est un paragraphe.</p><!-- enfant de body, soeur de h1 -->
+        </body>
+
+        ```
+
+        Les propriétés CSS dans le sélecteur body sont héritées par les éléments descendants (enfants). S’il y a un sélecteur plus précis, celui-ci remplacera les valeurs héritées.
+
+        ```css
+        body {
+          color: #222222;
+        }
+        h1 {
+          color: blue; /* Remplace le style hérité */
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Sélecteurs de type et de descendant
+
+        Les sélecteurs de type ciblent des éléments HTML par le nom de la balise.
+
+        ```css
+        p {
+          /* Applique un style à tous les paragraphes de la page */
+        }
+        ```
+
+        Les sélecteurs de descendant ciblent des éléments descendants (enfants).
+        Vous remarquerez qu’il y a une espace *entre chaque sélecteur*.
+
+        ```css
+        p a {
+          /* Applique un style seulement aux liens qui se trouvent dans des paragraphes */
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : ajouter des styles de police
+
+        Dans `styles.css`, ajoutons une police de base à la page et une police spéciale à l’en-tête principal et à la citation.
+
+        1. Appliquez la police **Lato** à la section `body` afin que les éléments imbriqués *héritent* les styles.
+
+        1. Appliquez la police **Sacramento** seulement à la balise `h1`.
+
+        1. Appliquez la police **Sacramento** seulement au paragraphe dans la citation de bloc (`blockquote`).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Retour sur l'exercice
+
+        Voici ce que nous avons ajouté :
+
+        ```css
+        body {
+          font-family: 'Lato', sans-serif;
+        }
+        h1 {
+          font-family: 'Sacramento', cursive;
+        }
+        blockquote p {
+          font-family: 'Sacramento', cursive;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide">
+      <h1>Styles de police et typographie</h1>
+      <p>Avant de revenir au fichier CSS, découvrons quelques propriétés CSS en modifiant les valeurs ci-dessous.</p>
+      <textarea class="snippet" data-subject="#typography-example" aria-label="Modifier l'extrait de code">line-height: 1,25;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 18px;
+font-weight: normal;
+text-transform: none;
+color: #222222;</textarea>
+      <div id="typography-example" class="example">
+          <p>Bonjour! Voici du texte pour essayer les styles du code ci-dessus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat sunt quae fugit illum in aut sed, quis nesciunt totam veritatis, dolores alias modi fuga commodi dicta facilis, consequatur temporibus.</p>
+      </div>
+
+      <hr>
+      <h2>Ressources :</h2>
+      <ul>
+        <li><a href="https://css-tricks.com/almanac/properties/f/font/">CSS-Tricks : font</a></li>
+      </ul>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice n°2 : personnaliser les polices (15 minutes)
+
+        1. (Facultatif) Choisissez deux familles de polices sur [Google Fonts](https://www.google.com/fonts/).
+        1. Modifiez la taille de la police (`font-size`) et la hauteur de ligne (`line-height`) à votre goût. Exemple :
+          ```css
+          h1 {
+            font-size: 50px;
+            line-height: 1;
+          }
+          blockquote p {
+            font-size: 32px;
+          }
+          ```
+        1. Modifiez les couleurs des polices avec la propriété `color`.
+
+           Veuillez noter que cette propriété accepte trois types de valeur pour représenter des couleurs : des mots-clés (noms de couleurs en anglais), des codes hexadécimaux (hex) et des codes RBG (RBV en français, pour rouge, bleu et vert).
+
+           L’exemple ci-dessous montre trois différentes façons de représenter la même couleur (brun clair, « tan »).
+          ```css
+          h1 {
+            color: tan;
+            color: #D2B48C;
+            color: rgb(210,180,140);
+          }
+          ```
+
+        ---
+        ##Ressources :
+
+        - [Noms de couleurs et les équivalents en hexadécimal](https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/)
+      </script>
+    </section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Entités de caractère Unicode
+
+        Avec les entités de caractère, nous pouvons ajouter des icônes à notre page sans utiliser d’images. Sélectionnez une forme dans le [tableau de référence d'entité de caractère](https://dev.w3.org/html5/html-author/charref) et copiez l’entité HTML.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : Unicode et entités de caractère
+        Ajoutons l'entité HTML à notre page avec la balise `span`. Vous pouvez l’ajouter seule ou dans un paragraphe.
+
+        Comme il s'agit d’une simple décoration, ajoutons l'attribut `aria-hidden` pour la cacher et ainsi empêcher les lecteurs d’écran de l'annoncer comme du contenu.
+
+        ```xml
+        <span aria-hidden="true">&#9829;</span>
+        <span aria-hidden="true">&hearts;</span>
+        ```
+
+        ```xml
+        <p>Nous remercions nos bénévoles, nos mentores et mentors, nos formatrices et formateurs et nos apprenantes et apprenants à l’échelle du pays. Grâce à vous, les événements de Femmes en programmation sont inoubliables! Bonne Saint-Valentin! <span aria-hidden="true">&hearts;</span></p>
+        ```
+
+        Ces entités ressemblent à des images, mais en fait, elles sont du texte. Vous pouvez donc appliquer des propriétés de typographie aux entités avec le CSS et en modifier la couleur et la taille comme vous le faites pour du texte.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Attributs de classe
+
+        Quand les **sélecteurs de type** sont trop généraux (quand ils ciblent un élément HTML sans préciser), utilisez un **attribut** de classe `class` pour ajouter des informations et les préciser.  Mettez un point avant le nom de la classe dans le CSS pour la déclarer.
+
+        ```css
+        span { /* Cible TOUS les éléments « span » */
+          color: blue;
+        }
+        .coeur-qui-bat { /* Ce style s'applique seulement à l’élément qui contient la classe coeur-qui-bat */
+          color: red;
+        }
+        ```
+
+        ```xml
+        <span aria-hidden="true">&hearts;</span>
+        <p>Nous remercions nos bénévoles, nos mentores et mentors, nos formatrices et formateurs et bis apprenantes et apprenants à l’échelle du pays. Grâce à vous, les événements de Femmes en programmation sont inoubliables! Bonne Saint-Valentin! <span class="coeur-qui-bat" aria-hidden="true">&hearts;</span></p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : utiliser une classe
+
+        Ajoutez la classe `coeur-qui-bat` à l’icône de cœur.
+
+        ```xml
+        <p>Nous remercions nos bénévoles, nos mentores et mentors, nos formatrices et formateurs et nos apprenantes et apprenants à l’échelle du pays. Grâce à vous, les événements de Femmes en programmation sont inoubliables! Bonne Saint-Valentin! <span class="coeur-qui-bat" aria-hidden="true">&hearts;</span></p>
+        ```
+
+        Dans le CSS, modifiez la couleur.
+
+        ```css
+        .coeur-qui-bat {
+          color: #B109AA; /* Mauve du logo de Femmes en programmation */
+        }
+        ```
+        Maintenant, nous allons l'animer pour créer un effet de cœur qui bat!
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Animations CSS3
+
+        ##<span class="heart-pulse" aria-hidden="true">&hearts;</span>
+
+        <span class="heart-falling" aria-hidden="true">&hearts;</span>
+        <span class="heart-falling" aria-hidden="true">&hearts;</span>
+        <span class="heart-falling" aria-hidden="true">&hearts;</span>
+        <span class="heart-falling" aria-hidden="true">&hearts;</span>
+        <span class="heart-falling" aria-hidden="true">&hearts;</span>
+        <span class="heart-falling" aria-hidden="true">&hearts;</span>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Règle CSS3 @keyframes
+
+        Pour créer un effet de cœur qui bat, nous devons dire au navigateur de grossir un élément, de le rapetisser, puis de le grossir, de le rapetisser encore, etc.
+
+        Utilisez la règle `@keyframes` pour appliquer des styles à un moment précis. Déclarez un nom d’animation et indiquez des points intermédiaires où les propriétés seront animées.
+
+        Pour créer des points intermédiaires différents, utilisez des pourcentages. `0%` marque le début de l’animation et `100%`, la fin.
+
+        ```css
+        @keyframes nomdelanimation {
+          0% {  /* Début */
+            width: 10px;
+          }
+          100% { /* Fin */
+            width: 100px;
+          }
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : propriété CSS3 transform
+
+        La propriété `transform` sert à ajouter des effets comme `skew` (inclinaison), `rotate` (rotation), et plus encore.
+
+        Aujourd’hui, nous utiliserons `scale` (mise à l’échelle) pour créer un effet de cœur qui bat.
+
+        ```css
+        @keyframes battement {
+          0% { /* Début, le cœur est à la moitié de sa taille complète */
+            transform: scale(0.5);
+          }
+          100% { /* Mise à l’échelle, fait grossir le cœur jusqu’à sa taille complète */
+            transform: scale(1);
+          }
+        }
+        ```
+
+        ---
+        ##Ressource :
+        - [Utiliser des animations et des transitions multiétapes](https://css-tricks.com/using-multi-step-animations-transitions/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Utiliser l'animation @keyframe
+
+        La règle `@keyframes` *crée* l'animation. Elle doit être assignée à un élément à l'aide du *nom de l'animation* (animation-name). Ici, le nom de l'animation est « battement ».  Vous devrez aussi ajouter une *durée* (animation-duration) afin que le navigateur sache pendant combien de temps il doit exécuter l'animation.
+
+        ```css
+        .coeur-qui-bat {
+          animation-name: battement;
+          animation-duration: 2s;
+        }
+        ```
+        Vous pouvez aussi écrire ces propriétés en forme courte.
+
+        ```css
+        .coeur-qui-bat {
+          animation: battement 2s;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Utiliser l'animation @keyframe
+
+        Par défaut, les animations sont exécutées *une seule fois* du début jusqu’à la fin. Pour répéter une animation, utilisez la propriété `animation-iteration-count` (nombre de fois que l’animation est répétée) avec une valeur numérique ou la valeur `infinite` pour répéter l'animation indéfiniment.
+
+        ```css
+        .coeur-qui-bat {
+          animation-name: battement;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+        }
+        ```
+        Voici la forme courte de la propriété.
+
+        ```css
+        .coeur-qui-bat {
+            animation: battement 2s infinite;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : cœur qui bat
+
+        Prenons notre code et appliquons l'effet à `coeur-qui-bat`.
+
+        ```xml
+        <span class="coeur-qui-bat" aria-hidden="true">&hearts;</span>
+        ```
+
+        Comme le cœur est dans une balise `span`, nous devrons ajouter une autre propriété, `display`, pour appliquer la bonne taille.  Consultez la ressource ci-dessous pour en savoir plus.
+
+
+        ```css
+        .coeur-qui-bat {
+          animation: battement 2s infinite;
+          display: inline-block;
+        }
+
+        @keyframes battement {
+          0% {
+            transform: scale(0,5);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        ```
+
+        ---
+        ##Ressource :
+        - [CSS-Tricks : display](https://css-tricks.com/almanac/properties/d/display/)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : points intermédiaires
+
+        Yé! Ça fonctionne! Mais il y a un petit problème... l'animation est un peu saccadée.  N’oubliez pas que nous voulons grossir l’élément, le rapetisser, le grossir encore, le rapetisser...
+
+        Ajoutez un point intermédiaire. Modifiez le CSS et n’hésitez pas à essayer des valeurs différentes pour la taille!
+
+        ```css
+        @keyframes battement {
+          0% { /* Le cœur commence petit */
+            transform: scale(0.5);
+          }
+          50% { /* Point intermédiaire, le cœur grossit */
+            transform: scale(1);
+          }
+          100% { /* Fin, le cœur reprend sa taille de départ */
+            transform: scale(0,5);
+          }
+        }
+        ```
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Important!
+
+        Les animations peuvent comprendre plusieurs propriétés. Toutefois, une animation peut seulement être appliquée à la *même* propriété, **pas** d’une propriété à une *autre.
+
+        Par exemple, une animation de `top: 0;` à `bottom: 0;` ne fonctionnera pas.
+
+        Nous animerions plutôt de `top: 0;` à `top: 200px` ou à toute autre valeur avec la <em>même</em> propriété.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : faire tomber et tourner un cœur, étape 1
+
+        Passons au niveau supérieur : créons une animation de cœurs qui tombent et qui tournent.
+
+        Ajoutons des cœurs à notre page et assignons-leur la classe `coeur-qui-tombe`. Nous les mettrons directement en bas de la balise `<main>`.
+
+        ```html
+        <main>
+          <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+          <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+          <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+          <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+          <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+          <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+          <!-- … -->
+        </main>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Position et :nth-of-type
+
+        Maintenant, nous utiliserons la propriété CSS `position` pour créer un effet de cœurs qui tombent de haut en bas à des hauteurs différentes.
+
+        Nous utiliserons aussi la *pseudo-classe* `:nth-of-type` pour sélectionner des cœurs précis.
+
+        ---
+        Ces concepts CSS sont avancés et exigent plus d'explications. Pour aujourd’hui, nous vous donnerons du code et vous pourrez expérimenter avec celui-ci. Consultez cette ressource pour en savoir plus sur [`position`](https://css-tricks.com/almanac/properties/p/position/) et sur [`:nth-of-type`](https://css-tricks.com/almanac/selectors/n/nth-of-type/).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : faire tomber et tourner un cœur, étape 2
+
+        Ajoutez `position: absolute;` au sélecteur de classe `.coeur-qui-tombe`.
+
+        Ainsi, vous pourrez déplacer un cœur de haut en bas peu importe son emplacement dans le HTML.
+
+        ```css
+        .coeur-qui-tombe {
+          position: absolute;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : faire tomber et tourner un cœur, étape 3
+
+        Maintenant, utilisons `left` et `bottom` pour placer chaque cœur à un endroit différent sur la page. Sans cela, les cœurs s'empileraient les uns sur les autres.
+
+        N’oubliez pas qu’il est impossible d’animer un élément d’une propriété (la position `top`) à une autre (la position `bottom`). Nous n'animerons donc que la propriété `bottom`.
+
+        `.coeur-qui-tombe:nth-of-type(1)` sélectionne le premier cœur, `.coeur-qui-tombe:nth-of-type(2)` sélectionne le deuxième, etc. Remarque : `nth-of-type` veut dire « combientième du type ».
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : faire tomber et tourner un cœur, étape 3
+
+        ```css
+        .coeur-qui-tombe:nth-of-type(1) {
+          bottom: 1200px;
+          left: 2%;
+        }
+        .coeur-qui-tombe:nth-of-type(2) {
+          bottom: 500px;
+          left: 15%;
+        }
+        /* … */
+        ```
+        Il est possible que certains cœurs ne s'affichent plus à l’écran. Ce n'est pas un problème :  la valeur est tout simplement plus grande que la hauteur de la fenêtre du navigateur.  Les cœurs s'afficheront à nouveau quand l’animation sera appliquée.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice de groupe : faire tomber et tourner un cœur, étape 4
+
+      Créez une animation `@keyframe` pour déplacer les cœurs de haut (top) en bas (bottom).  À la *fin* de l'animation, utilisez une valeur négative pour bottom afin de faire disparaitre les cœurs à l’extérieur de l’écran.
+
+      (Nous ajouterons l’effet de rotation bientôt.)
+
+      ```css
+      @keyframes tomber {
+        0% {
+
+        }
+        50% {
+
+        }
+        100% {
+          bottom: -25px;
+        }
+      }
+      ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice de groupe : faire tomber et tourner un cœur, étape 5
+
+      Appliquez l'animation à la classe coeur-qui-tombe.
+
+      ```xml
+      <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+      <span class="coeur-qui-tombe" aria-hidden="true">&hearts;</span>
+      <!-- … ajoutez d'autres balises « span » pour mettre plus de cœurs dans l’animation! -->
+      ```
+
+      ```css
+      .coeur-qui-tombe {
+        position: absolute;
+        animation: tomber 6s infinite linear;
+      }
+      ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice de groupe : faire tomber et tourner un cœur, étape 5
+
+      Ajoutez la propriété `transform: rotate()` pour faire tourner les cœurs avec une valeur en degrés.
+
+      ```css
+      @keyframes tomber {
+        0% {
+          transform: rotate(360deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        100% {
+          bottom: -25px;
+          transform: rotate(-360deg);
+        }
+      }
+      ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Marathon de programmation
+
+        Un monde de possibilités s’ouvre à vous! Si vous avez besoin d’inspiration, regardez la [version Femmes en programmation du projet sur CodePen](https://codepen.io/learningcode/pen/KwyGgY) ou dans vos dossiers de projet. Vous pouvez aussi poser des questions aux autres personnes dans la classe, aux mentores et mentors ou à Google!
+
+        Voici quelques suggestions :
+
+        1. Téléversez votre carte sur [Codepen](https://codepen.io) pour la partager en ligne.
+        1. Utilisez des polices d’icônes pour avoir plus de choix que les entités de caractère Unicode.
+        Ajoutez une icône de « bombe » à votre bombe d’amour à l’aide de [Font Awesome](https://fortawesome.github.io/Font-Awesome/icon/bomb/).
+        1. Modifiez les couleurs et la taille des cœurs ou ajoutez d’autres icônes.
+        1. Ajoutez une photo de vous et de votre partenaire! [Apprenez-en davantage sur les balises d’image sur MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img).
+      </script>
+    </section>
+
+    <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>Intro au HTML et aux animations CSS<br>
+        édition Saint-Valentin</span>
+      </h2>
+
+      <img class="instructor" src="framework/img/generic-profile-picture.jpg" alt="Nom de la formatrice">
+      <h2><span class="cursive">avec</span> Nom de la formatrice</h2>
+      <ul>
+        <li><a href="mailto:">allo@courriel.com</a></li>
+        <li><a href="#">monsite.com</a></li>
+        <li><a href="https://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <p class="attribution">Diapositives créées par <a href="http://christinatruong.com">Christina Truong</a> à partir de <a href="https://github.com/LeaVerou/csss"> « SlideShow » de Lea Verou</a> et de <a href="https://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+      </script>
+</section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/plugins/a11y/plugin.js"></script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
